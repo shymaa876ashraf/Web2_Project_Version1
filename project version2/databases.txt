@@ -1,0 +1,24 @@
+drop database if exists localstorage_events;
+create database localstorage_events;
+use localstorage_events;
+create table loadss(content varchar(20) ,ttype varchar(20),target varchar(20),ddate varchar(20));
+create table unloadss(
+content_un varchar(20),
+ttype varchar(20),
+targets varchar(20),
+date_un varchar(20));
+create table geneatess(
+content_un varchar(20),
+ttype varchar(20),
+targets varchar(20),
+date_gen varchar(20));
+create table lettergenerates(
+content_lett varchar(20),
+ttype varchar(20),
+target varchar(20),
+date_letgen varchar(20));
+
+select * from loadss;
+select * from unloadss;
+select * from geneatess;
+select * from lettergenerates;
